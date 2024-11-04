@@ -1,0 +1,7 @@
+[alias]
+	sw = switch
+	st = status -sb
+	ll = log --oneline
+[user]
+	name = cballevre
+	email = celestin.ballevre@protonmail.com
