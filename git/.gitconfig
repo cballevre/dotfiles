@@ -1,7 +1,14 @@
-[alias]
-	sw = switch
-	st = status -sb
-	ll = log --oneline
 [user]
 	name = cballevre
 	email = celestin.ballevre@protonmail.com
+[alias]
+	po = "!f(){ git push origin \"$(git rev-parse \n--abbrev-ref HEAD)\" --force; }; f"
+	st = status -sb
+	ll = log --oneline
+	cm = commit -m
+	sw = switch
+	br = branch
+[push]
+	autoSetupRemote = true
+[core]
+	ignorecase = false
