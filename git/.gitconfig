@@ -3,11 +3,20 @@
 	email = celestin.ballevre@protonmail.com
 [alias]
 	po = "!f(){ git push origin \"$(git rev-parse \n--abbrev-ref HEAD)\" --force; }; f"
+	a = add
+	aa = add .
 	st = status -sb
 	ll = log --oneline
 	cm = commit -m
+	ca = commit --amend --no-edit
 	sw = switch
 	br = branch
+	r = rebase
+	ri = rebase -i
+	rc = rebase --continue
+	po = push origin
+	force-push = "!f(){ git push origin \"$(git rev-parse --abbrev-ref HEAD)\" --force; }; f"
+	pull-origin = "!f(){ git pull origin \"$(git rev-parse --abbrev-ref HEAD)\"; }; f"
 [push]
 	autoSetupRemote = true
 [core]
