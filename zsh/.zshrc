@@ -1,12 +1,27 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/cballevre/.zshrc'
+# Enable persistent history
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
+
+# Initialize completion
+autoload -U compinit; compinit
+
+# Alias for ls from OMZ
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# VSCode alias
+alias code='flatpak run com.visualstudio.code &>/dev/null'
+
+# Volta setup
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
