@@ -26,5 +26,8 @@ alias code='flatpak run com.visualstudio.code &>/dev/null'
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# Composer setup
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
 # Starship
 eval "$(starship init zsh)"
