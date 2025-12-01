@@ -9,12 +9,9 @@ setopt INC_APPEND_HISTORY
 # Initialize completion
 autoload -U compinit; compinit
 
-# Alias for ls from OMZ
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -lh'
-alias ls='ls -G'
-alias lsa='ls -lah'
+# Alias for ls
+alias ll="ls -l"
+alias lla="ls -la"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
