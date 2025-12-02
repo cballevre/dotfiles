@@ -1,6 +1,9 @@
 [user]
 	name = cballevre
 	email = celestin.ballevre@protonmail.com
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
+	[user]
+		name = Célestin Ballèvre
 [alias]
 	po = "!f(){ git push origin \"$(git rev-parse \n--abbrev-ref HEAD)\" --force; }; f"
 	a = add
@@ -21,3 +24,5 @@
 	autoSetupRemote = true
 [core]
 	ignorecase = false
+[init]
+	defaultBranch = main
