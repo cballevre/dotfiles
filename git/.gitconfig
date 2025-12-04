@@ -24,5 +24,6 @@
 	autoSetupRemote = true
 [core]
 	ignorecase = false
+	editor = vi
 [init]
 	defaultBranch = main
