@@ -28,3 +28,8 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Starship
 eval "$(starship init zsh)"
+
+# PHPBrew
+export PHPBREW_ROOT=/opt/phpbrew
+export PHPBREW_HOME=/opt/phpbrew
+source /opt/phpbrew/bashrc
