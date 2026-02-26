@@ -16,9 +16,6 @@ alias lla="ls -la"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# VSCode alias
-alias code='flatpak run com.visualstudio.code &>/dev/null'
-
 # Volta setup
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
