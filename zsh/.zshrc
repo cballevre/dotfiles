@@ -30,3 +30,6 @@ eval "$(starship init zsh)"
 export PHPBREW_ROOT=/opt/phpbrew
 export PHPBREW_HOME=/opt/phpbrew
 source /opt/phpbrew/bashrc
+
+# Python setup
+export PATH="$HOME/.local/bin:$PATH"
