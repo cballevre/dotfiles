@@ -33,3 +33,6 @@ source /opt/phpbrew/bashrc
 
 # Python setup
 export PATH="$HOME/.local/bin:$PATH"
+
+# Flutter setup
+export PATH="$HOME/dev/flutter/bin:$PATH"
