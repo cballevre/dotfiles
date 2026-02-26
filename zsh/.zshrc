@@ -36,3 +36,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Flutter setup
 export PATH="$HOME/dev/flutter/bin:$PATH"
+
+# Docker Compose alias
+alias dc="docker compose"
+
